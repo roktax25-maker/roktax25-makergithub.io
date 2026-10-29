@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)">
+  <title>B-SIDE</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a href="#top" class="logo">B-SIDE</a>
+    <button class="menu-btn" id="menuBtn" aria-label="메뉴 열기" aria-expanded="false" aria-controls="drawer">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <div class="overlay" id="overlay" hidden></div>
+  <nav class="drawer" id="drawer" aria-label="전체 메뉴" aria-hidden="true">
+    <p class="drawer-label">INDEX</p>
+    <ul class="drawer-list" id="drawerList"></ul>
+    <p class="drawer-foot">© B-SIDE</p>
+  </nav>
+
+  <section class="hero" id="top">
+    <img class="hero-bg" src="images/hero.jpg" alt="" fetchpriority="high">
+    <div class="hero-content">
+      <p class="hero-eyebrow">Personal Music Archive</p>
+      <h1 class="hero-title">B-SIDE</h1>
+      <p class="hero-desc">타이틀곡 말고, 뒷면에 숨어 있던 노래들.<br>좋아하는 소리를 모아두는 곳.</p>
+      <div class="hero-line" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <main>
+    <div id="categories"></div>
+  </main>
+
+  <footer class="footer">
+    <p>B-SIDE — made with headphones on.</p>
+    <p class="credit">Photos: <a href="https://pixabay.com" target="_blank" rel="noopener">Pixabay</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
